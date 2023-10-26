@@ -1,0 +1,1 @@
+SELECT ROUND(SUM(price) / COUNT(price), 2) FROM products
