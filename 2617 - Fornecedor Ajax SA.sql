@@ -28,3 +28,12 @@ pelo fornecedor ‘Ajax SA’.
 
 */
 
+SELECT
+  pd.name,
+  pv.name
+FROM
+  providers pv,
+  products pd
+WHERE
+  pv.id = pd.id_providers
+  AND pv.name = 'Ajax SA'
