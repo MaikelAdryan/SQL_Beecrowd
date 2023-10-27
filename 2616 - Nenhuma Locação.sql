@@ -30,8 +30,7 @@ SELECT
   c.id,
   c.name
 FROM
-  customers c,
-  locations l
+  customers c
 WHERE
   c.id NOT IN (SELECT locations.id_customers FROM locations) 
 GROUP BY c.id
