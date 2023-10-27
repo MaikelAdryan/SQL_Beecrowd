@@ -26,3 +26,13 @@ Seu trabalho é nos entregar o ID e o nome dos clientes que não realizaram nenh
 | 6   | 2016-04-04     | 4            |
 
 */
+SELECT
+  c.id,
+  c.name
+FROM
+  customers c,
+  locations l
+WHERE
+  c.id NOT IN (SELECT locations.id_customers FROM locations) 
+GROUP BY c.id
+ORDER BY c.id
