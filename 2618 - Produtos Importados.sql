@@ -16,7 +16,6 @@ para os produtos fornecidos pelo fornecedor ‘Sansul SA’ e cujo nome da categ
 | 4   | Blue Toaster    | 20     | 9.90    | 3            | 1             |
 | 5   | TV              | 30     | 3000.25 | 2            | 2             |
 
-
 ### Tabela "providers":
 | id  | name         | street                         | city           | state |
 | --- | ------------ | ------------------------------ | -------------  | ----- |
@@ -36,3 +35,17 @@ para os produtos fornecidos pelo fornecedor ‘Sansul SA’ e cujo nome da categ
 | 5   | Supreme      |
 
 */
+
+SELECT
+  pd.name,
+  pv.name,
+  c.name
+FROM
+  providers pv,
+  categories c,
+  products pd
+WHERE
+  pd.id_providers = pv.id
+  AND pd.id_categories = c.id
+  AND pv.name = 'Sansul SA'
+  AND c.name = 'Imported'
