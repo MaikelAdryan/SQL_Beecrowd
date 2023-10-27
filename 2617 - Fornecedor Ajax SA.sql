@@ -1,10 +1,13 @@
-/*
+/* Fornecedor Ajax SA
 O setor financeiro encontrou alguns problemas na entrega de um dos nossos fornecedores,
 a entrega dos produtos não condiz com a nota fiscal.
 
 Seu trabalho é exibir o nome dos produtos e o nome do fornecedor, para os produtos fornecidos
 pelo fornecedor ‘Ajax SA’.
 
+
+|  providers                                                              |
+|  ---------------------------------------------------------------------- |
 | id  | name         | street                    | city           | state |
 | --- | ------------ | ------------------------- | -------------- | ----- |
 | 1   | Ajax SA      | Presidente Castelo Branco | Porto Alegre   | RS    |
@@ -13,6 +16,8 @@ pelo fornecedor ‘Ajax SA’.
 | 4   | Elon Electro | Apolo                     | São Paulo      | SP    |
 | 5   | Mike Electro | Pedro da Cunha            | Curitiba       | PR    |
 
+|  products                                                |
+| -------------------------------- ----------------------- |
 | id  | name             | amount | value   | id_providers |
 | --- | ---------------- | ------ | ------- | ------------ |
 | 1   | Blue Chair       | 30     | 300.00  | 5            |
@@ -22,3 +27,4 @@ pelo fornecedor ‘Ajax SA’.
 | 5   | Solar Panel      | 30     | 3000.25 | 4            |
 
 */
+
