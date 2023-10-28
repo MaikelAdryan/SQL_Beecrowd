@@ -27,3 +27,12 @@ do fornecedor inicie com a letra ‘P’.
 | 5   | Solar Panel       | 30     | 3000.25 | 4            |
 
 */
+SELECT
+  pd.name
+FROM
+  providers pv,
+  products pd
+WHERE
+  pv.id = pd.id_providers
+  AND pd.amount BETWEEN 10 AND 20
+  AND pv.name LIKE 'P%'
